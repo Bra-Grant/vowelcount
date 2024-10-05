@@ -1,4 +1,4 @@
-/*
+/* 
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
@@ -11,8 +11,6 @@ import java.util.Scanner;
  */
 public class Icetask6_new {
 
-    public class VowelCounter {
-    
     // Function to count vowels
     public static int countVowels(String sentence) {
         // Convert the sentence to lowercase
@@ -20,6 +18,7 @@ public class Icetask6_new {
         // Variable to store the number of vowels
         int vowelCount = 0;
         
+        // Iterate through each character of the string
         for (int i = 0; i < sentence.length(); i++) {
             // Get the character at the current index
             char currentChar = sentence.charAt(i);
@@ -31,19 +30,8 @@ public class Icetask6_new {
         }
         return vowelCount; 
     }
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     public static void main(String[] args) {
-        
         // Scanner to take input from the user
         Scanner input = new Scanner(System.in);
         
@@ -55,5 +43,4 @@ public class Icetask6_new {
         int numVowels = countVowels(sentence);
         System.out.println("The number of vowels in the sentence is: " + numVowels);
     }
-}
 }
