@@ -18,7 +18,7 @@ public class Icetask6_new {
         // Variable to store the number of vowels
         int vowelCount = 0;
         
-        // Iterate through each character of the string
+        
         for (int i = 0; i < sentence.length(); i++) {
             // Get the character at the current index
             char currentChar = sentence.charAt(i);
