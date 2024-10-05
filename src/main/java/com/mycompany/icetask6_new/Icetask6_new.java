@@ -3,6 +3,7 @@
  */
 
 package com.mycompany.icetask6_new;
+import java.util.Scanner;
 
 /**
  *
@@ -11,6 +12,7 @@ package com.mycompany.icetask6_new;
 public class Icetask6_new {
 
     public static void main(String[] args) {
+        
         System.out.println("Hello World!");
     }
 }
