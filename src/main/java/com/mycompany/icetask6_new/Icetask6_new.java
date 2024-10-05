@@ -20,6 +20,18 @@ public class Icetask6_new {
         // Variable to store the number of vowels
         int vowelCount = 0;
         
+        for (int i = 0; i < sentence.length(); i++) {
+            // Get the character at the current index
+            char currentChar = sentence.charAt(i);
+            
+            // Check if the character is a vowel using indexOf
+            if ("aeiou".indexOf(currentChar) != -1) {
+                vowelCount++; 
+            }
+        }
+        return vowelCount; 
+    }
+        
     
     
     
@@ -32,6 +44,16 @@ public class Icetask6_new {
     
     public static void main(String[] args) {
         
-        System.out.println("Hello World!");
+        // Scanner to take input from the user
+        Scanner input = new Scanner(System.in);
+        
+        // Ask the user to enter a sentence
+        System.out.println("Enter a sentence:");
+        String sentence = input.nextLine();
+        
+        // Call the countVowels function and display the result
+        int numVowels = countVowels(sentence);
+        System.out.println("The number of vowels in the sentence is: " + numVowels);
     }
+}
 }
